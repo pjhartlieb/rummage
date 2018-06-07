@@ -6,7 +6,7 @@
 #    [-] Processing censys output                          #
 #                                                          #
 #    [-] 2017.12.28                                        #
-#          V0001                                           #
+#          V0002                                           #
 #          Black Lantern Security (BLS)                    #
 #          @pjhartlieb                                     #
 #                                                          #
@@ -14,7 +14,10 @@
 ############################################################
 
 """
-This utility will process results from queries to the censys.io API and create csv output
+[*] REF
+[1] https://github.com/gelim/censys/blob/master/censys_io.py
+
+This utility will process results from queries to the censys.io API and create csv output. This tool does nothing other than process the output from gelim's fantastic tool which is referenced above.
 
 Sample query:
 

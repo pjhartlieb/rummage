@@ -4,7 +4,7 @@
 ############################################################
 #                                                          #
 #    [*] 2018.05.22                                        #
-#          V0001                                           #
+#          V0002                                           #
 #          Black Lantern Security (BLS)                    #
 #          @pjhartlieb                                     #
 #                                                          #
@@ -14,6 +14,17 @@
 import random
 import re
 from colorama import Fore
+
+"""
+
+This utility will parse gnmap data. The input is "nmap.gnmap". The output is a csv file.
+
+The input file has been hard coded below.
+
+[-] TBD
+1. The input files should be command line arguments.
+
+"""
 
 def readData(data):
     """
@@ -90,6 +101,7 @@ def writetoFile(streams):
     for item in streams:
         thefile.write("%s\n" % item)
 
-dataEntries = readData('nmap.gnmap')
-streams = preProc(dataEntries)
-writetoFile(streams)
+if __name__ == '__main__':
+    dataEntries = readData('nmap.gnmap')
+    streams = preProc(dataEntries)
+    writetoFile(streams)
