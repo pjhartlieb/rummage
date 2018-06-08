@@ -1,2 +1,2 @@
 # rummage
-Scripts for highly specific tasks
+Hacky shortcut scripts for highly specific tasks
